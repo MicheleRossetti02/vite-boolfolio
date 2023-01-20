@@ -62,8 +62,8 @@ export default {
                         <div class="card border-0 shadow-sm rounded-0 rounded-bottom">
                             <img class="card-image rounded-top" :src="getImagePath(song.cover_image)" alt="">
                             <div class="card-body">
-                                <h4>{{ song.title }}</h4>
                                 <h2>{{ song.title }}</h2>
+                                <h4>{{ song.album }}</h4>
                                 <p>
                                     {{ song.artist }}
                                 </p>
@@ -79,7 +79,7 @@ export default {
                                 </div>
                                 <div class="technologies">
                                     <strong>technologies: </strong>
-                                    <template v-if="song.technologies.lenght > 0">
+                                    <template v-if="song.technologies.length > 0">
                                         <span v-for="technology in song.technologies">
                                             #{{ technology.name }}
                                         </span>
