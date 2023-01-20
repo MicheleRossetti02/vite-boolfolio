@@ -5,7 +5,7 @@ export default {
     data() {
         return {
             songs: null,
-            base_api_url: 'http://localhost:5173/',
+            base_api_url: 'http://127.0.0.1:8000',
             loading: true,
             error: null,
 
@@ -17,8 +17,8 @@ export default {
             axios
                 .get(url)
                 .then(response => {
-                    console.log(response.data.results);
-                    this.songs = response.data.results;
+                    console.log(response.data.response);
+                    this.songs = response.data.response;
                     this.loading = false;
                 })
                 .catch(error => {
