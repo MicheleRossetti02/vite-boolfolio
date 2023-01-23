@@ -19,7 +19,7 @@ export default {
     <AppNav></AppNav>
     <AppBanner></AppBanner>
     <AppMain></AppMain>
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
 
 </template>
 
