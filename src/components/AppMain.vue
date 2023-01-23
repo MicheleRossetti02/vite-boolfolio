@@ -60,35 +60,37 @@ export default {
                 <div class="row row-cols-1 row-cols-sm-3 g-4">
                     <div class="col" v-for="song in songs.data">
                         <div class="card border-0 shadow-sm rounded-0 rounded-bottom">
-                            <img class="card-image rounded-top" :src="getImagePath(song.cover_image)" alt="">
-                            <div class="card-body">
-                                <h2>{{ song.title }}</h2>
-                                <h4>{{ song.album }}</h4>
-                                <p>
-                                    {{ song.artist }}
-                                </p>
-                                <a href="#">Read more</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                <div class="category">
-                                    <strong>Category: </strong>
-                                    <span v-if="song.category">
-                                        {{ song.category.name }}
-                                    </span>
-                                    <span v-else>Uncategorized</span>
+                            <router-link :to="{ name: 'single-song', params: { slug: song.slug } }">
+                                <img class="card-image rounded-top" :src="getImagePath(song.cover_image)" alt="">
+                                <div class="card-body">
+                                    <h2>{{ song.title }}</h2>
+                                    <h4>{{ song.album }}</h4>
+                                    <p>
+                                        {{ song.artist }}
+                                    </p>
+                                    <a href="#">Read more</a>
                                 </div>
-                                <div class="technologies">
-                                    <strong>technologies: </strong>
-                                    <template v-if="song.technologies.length > 0">
-                                        <span v-for="technology in song.technologies">
-                                            #{{ technology.name }}
+                                <div class="card-footer text-muted">
+                                    <div class="category">
+                                        <strong>Category: </strong>
+                                        <span v-if="song.category">
+                                            {{ song.category.name }}
                                         </span>
-                                    </template>
-                                    <template v-else>
-                                        <span>No technologies.</span>
-                                    </template>
+                                        <span v-else>Uncategorized</span>
+                                    </div>
+                                    <div class="technologies">
+                                        <strong>technologies: </strong>
+                                        <template v-if="song.technologies.length > 0">
+                                            <span v-for="technology in song.technologies">
+                                                #{{ technology.name }}
+                                            </span>
+                                        </template>
+                                        <template v-else>
+                                            <span>No technologies.</span>
+                                        </template>
+                                    </div>
                                 </div>
-                            </div>
+                            </router-link>
 
                         </div>
                     </div>
