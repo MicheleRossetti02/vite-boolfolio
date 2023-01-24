@@ -58,15 +58,15 @@ export default {
         <div class="container">
             <template v-if="projects">
                 <div class="row row-cols-1 row-cols-sm-3 g-4">
-                    <div class="col" v-for="project in projects.data">
+                    <div class="col text-c" v-for="project in projects.data">
                         <div class="card border-0 shadow-sm rounded-0 rounded-bottom">
 
                             <img class="card-image rounded-top" :src="getImagePath(project.cover_image)" alt="">
                             <div class="card-body">
                                 <h2>{{ project.title }}</h2>
-                                <h4>{{ project.album }}</h4>
+                                <!-- <h4>{{ project.source_code }}</h4> -->
                                 <p>
-                                    {{ project.artist }}
+                                    {{ project.project_link }}
                                 </p>
                                 <router-link :to="{ name: 'single-project', params: { slug: project.slug } }">Read more
                                 </router-link>

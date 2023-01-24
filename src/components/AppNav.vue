@@ -318,7 +318,7 @@ export default {
                     <div class="collapse navbar-collapse" id="mainNav">
                         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                             <li class="nav-item">
-                                <router-link class="nav-link " :to="{ name: 'home' }">HOME <span
+                                <router-link class="nav-link" activeClass="active " :to="{ name: 'home' }">HOME <span
                                         class="visually-hidden">(current)</span></router-link>
                             </li>
                             <li class="nav-item">
@@ -326,10 +326,12 @@ export default {
                                 <!-- <router-link class="nav-link" :to="{ name: 'portfolio' }">PROJECTS</router-link> -->
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="{ name: 'about' }">ABOUT</router-link>
+                                <router-link class="nav-link" activeClass="active "
+                                    :to="{ name: 'about' }">ABOUT</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="{ name: 'contacts' }">CONTACTS</router-link>
+                                <router-link class="nav-link" activeClass="active "
+                                    :to="{ name: 'contacts' }">CONTACTS</router-link>
                             </li>
 
                         </ul>

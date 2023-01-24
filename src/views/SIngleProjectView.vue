@@ -44,7 +44,7 @@ export default {
                 {{ project.title }}
             </h2>
             <div class="content">
-                {{ project.album }}
+                {{ project.source_code }}
             </div>
         </div>
     </div>
