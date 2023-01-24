@@ -3,7 +3,7 @@ import HomeView from './views/HomeView.vue'
 import AboutView from './views/AboutView.vue'
 import BlogView from './views/BlogView.vue'
 import SingleSongView from './views/SingleSongView.vue'
-// import ContactsView from './views/ContactsView.vue'
+import ContactsView from './views/ContactsView.vue'
 import NotFoundView from './views/NotFoundView.vue'
 
 // 2 define routes
@@ -32,11 +32,11 @@ const router = createRouter({
             name: 'single-song',
             component: SingleSongView
         },
-        // {
-        //     path: '/contacts',
-        //     name: 'contacts',
-        //     component: ContactsView
-        // },
+        {
+            path: '/contacts',
+            name: 'contacts',
+            component: ContactsView
+        },
         {
             path: '/:pathMatch(.*)*',
             name: 'not-found',

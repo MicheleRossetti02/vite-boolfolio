@@ -14,7 +14,6 @@ export default {
 
 <template>
     <AppBanner :title="pageTitle" />
-    <AppMain />
 
 </template>
 

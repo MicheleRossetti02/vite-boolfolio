@@ -1,12 +1,15 @@
 <script>
+import AppMain from '../components/AppMain.vue';
 export default {
-    name: 'HomeView'
+    name: 'HomeView',
+    components: { AppMain }
 }
+
 </script>
 
 
 <template>
-    <section class="home_page d-flex align-items-center">
+    <!-- <section class="home_page d-flex align-items-center">
         <div class="container text-center px-5">
             <div class="box border rounded-3 py-5">
 
@@ -14,8 +17,9 @@ export default {
                 <router-link class="btn btn-danger btn-sm" :to="{ name: 'blog' }">Check it out</router-link>
             </div>
         </div>
-    </section>
+    </section> -->
 
+    <AppMain />
 
 
 </template>
