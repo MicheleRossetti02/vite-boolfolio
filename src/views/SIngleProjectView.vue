@@ -7,22 +7,22 @@ export default {
     components: { AppBanner },
     data() {
         return {
-            song: null,
+            project: null,
             loading: true,
             api_base_url: 'http://localhost:8001'
         }
     },
     mounted() {
         //console.log(this.$route.params.slug);
-        const url = this.api_base_url + '/api/songs/' + this.$route.params.slug
+        const url = this.api_base_url + '/api/projects/' + this.$route.params.slug
         console.log(url);
         axios.get(url)
             .then(response => {
                 if (response.data.success) {
-                    this.song = response.data.results
+                    this.project = response.data.results
                     this.loading = false
                 } else {
-                    /* TODO: handle the not found song  
+                    /* TODO: handle the not found project  
                     404 
                     */
                     // https://router.vuejs.org/guide/essentials/navigation.html#navigate-to-a-different-location
@@ -37,14 +37,14 @@ export default {
 
 <template>
     <AppBanner :title="$route.params.slug" />
-    <div class="single-song" v-if="song">
-        <img class="img-fluid w-100" :src="api_base_url + '/storage/' + song.cover_image" :alt="song.title">
+    <div class="single-project" v-if="project">
+        <img class="img-fluid w-100" :src="api_base_url + '/storage/' + project.cover_image" :alt="project.title">
         <div class="container">
             <h2>
-                {{ song.title }}
+                {{ project.title }}
             </h2>
             <div class="content">
-                {{ song.album }}
+                {{ project.album }}
             </div>
         </div>
     </div>

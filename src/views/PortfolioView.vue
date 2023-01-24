@@ -2,11 +2,11 @@
 import AppBanner from '../components/AppBanner.vue';
 import AppMain from '../components/AppMain.vue';
 export default {
-    name: 'BlogView',
+    name: 'PortfolioView',
     components: { AppBanner, AppMain },
     data() {
         return {
-            pageTitle: 'Blog'
+            pageTitle: 'Portfolio'
         }
     }
 }
@@ -14,7 +14,7 @@ export default {
 
 <template>
     <AppBanner :title="pageTitle" />
-
+    <AppMain></AppMain>
 </template>
 
 

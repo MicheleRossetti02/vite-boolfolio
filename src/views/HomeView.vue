@@ -1,8 +1,8 @@
 <script>
-import AppMain from '../components/AppMain.vue';
+// import AppMain from '../components/AppMain.vue';
 export default {
-    name: 'HomeView',
-    components: { AppMain }
+    // name: 'HomeView',
+    // components: { AppMain }
 }
 
 </script>
@@ -19,7 +19,7 @@ export default {
         </div>
     </section> -->
 
-    <AppMain />
+    <!-- <AppMain /> -->
 
 
 </template>
