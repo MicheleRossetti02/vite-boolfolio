@@ -1,9 +1,10 @@
 <script>
 import AppBanner from '../components/AppBanner.vue';
-import AppMain from '../components/AppMain.vue';
+
+import PostList from '../components/PostList.vue';
 export default {
     name: 'PortfolioView',
-    components: { AppBanner, AppMain },
+    components: { AppBanner, PostList },
     data() {
         return {
             pageTitle: 'Portfolio'
@@ -14,7 +15,7 @@ export default {
 
 <template>
     <AppBanner :title="pageTitle" />
-    <AppMain></AppMain>
+    <PostList></PostList>
 </template>
 
 
