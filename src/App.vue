@@ -1,26 +1,41 @@
 <script>
-import AppNav from './components/AppNav.vue'
-import AppBanner from './components/AppBanner.vue'
-import AppFooter from './components/AppFooter.vue';
+// import AppNav from './components/AppNav.vue'
+// import IntroView from './views/IntroView.vue';
+
+// import AppBanner from './components/AppBanner.vue'
+// import AppFooter from './components/AppFooter.vue';
 
 
 
 export default {
     components: {
-        AppNav,
-        AppBanner,
-        AppFooter
+        // AppNav,
+
+        // AppBanner,
+        // AppFooter
+
+        // IntroViews
     },
+
 }
+
+
+
+
 </script>
 
 <template>
 
-    <AppNav />
+    <!-- <AppNav /> -->
+    <!-- <IntroView /> -->
+    <router-view></router-view>
+
     <!-- <AppBanner></AppBanner>
     <AppMain></AppMain> -->
-    <router-view></router-view>
-    <AppFooter />
+    <!-- <AppFooter /> -->
+
+
+
 </template>
 
 <style lang="scss">

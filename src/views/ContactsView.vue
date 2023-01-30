@@ -1,10 +1,13 @@
 <script>
+
 import AppBanner from '../components/AppBanner.vue';
 import axios from 'axios';
 import { store } from '../store';
+import AppNav from '../components/AppNav.vue';
+import AppFooter from '../components/AppFooter.vue';
 export default {
     name: 'ContactsView',
-    components: { AppBanner },
+    components: { AppBanner, AppNav, AppFooter },
     data() {
         return {
             store,
@@ -52,19 +55,15 @@ export default {
 </script>
 
 <template>
+    <AppNav />
     <AppBanner title="Contacts Page" />
-    <div class="container">
+    <div class="container ">
 
-        <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, adipisci optio, tempore maiores sit
-            asperiores
-            sed est nulla esse quos quam laudantium, voluptatibus minus officiis assumenda. Ex vitae eos earum.
-        </p>
         <div v-if="success" class="alert alert-success text-start" role="alert">
             Messaggio inviato con successo
 
         </div>
-        <form @submit.prevent="sendForm">
+        <form @submit.prevent="sendForm" class="text-white">
             <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
                 <input type="text" name="name" id="name" v-model="name" class="form-control" placeholder="Mario Rossi"
@@ -96,11 +95,25 @@ export default {
             }}</button>
         </form>
     </div>
+
+    <!-- <AppFooter /> -->
 </template>
 
 
 <style lang="scss" scoped>
 .error {
     color: red;
+}
+
+.container,
+button {
+
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
 }
 </style>

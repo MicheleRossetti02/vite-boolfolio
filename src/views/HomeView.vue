@@ -1,11 +1,13 @@
 <script>
 import AppBanner from '../components/AppBanner.vue';
 import AppJumbotron from '../components/AppJumbotron.vue';
+import AppNav from '../components/AppNav.vue';
+import PostList from '../components/PostList.vue';
 
 
 // import AppMain from '../components/AppMain.vue';
 export default {
-    components: { AppBanner, AppJumbotron },
+    components: { AppBanner, AppJumbotron, AppNav, PostList },
     data() {
         return {
             pageTitle: 'Home'
@@ -17,10 +19,12 @@ export default {
 
 
 <template>
+    <AppNav />
+
     <AppBanner :title="pageTitle" />
     <AppJumbotron></AppJumbotron>
 
-
+    <PostList />
 
     <div class="container marketing">
 
