@@ -1,10 +1,7 @@
 <script>
 
-
-
 export default {
-    name: "AppNav",
-
+    name: 'AppNav'
 }
 </script>
 <template>
@@ -14,9 +11,6 @@ export default {
             <img src="../assets/logo.png" width="" alt="">
 
         </router-link>
-
-        <!-- <h1 class="py-4 mb-0 text-uppercase">{{ title }}</h1> -->
-
         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
             <li class="nav-item">
 
@@ -45,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-
+    position: absolute;
     top: 0;
     // left: 0;
 
@@ -54,12 +48,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 10000;
 
     img {
         top: 30px;
         width: 200px;
-        // position: absolute;
+        position: absolute;
         background-color: #2b1055;
         padding: 10px 10px;
         border-radius: 20px;
@@ -78,7 +72,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        // flex-direction: row;
         color: #fff;
         font-weight: 800;
         text-decoration: none;
@@ -86,7 +80,9 @@ header {
         text-transform: uppercase;
         letter-spacing: 1px;
 
-
+        position: absolute;
+        top: 150px;
+        right: 30px;
 
 
         li {
