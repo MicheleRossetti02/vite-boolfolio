@@ -8,7 +8,7 @@ export default {
 <template>
     <div class="banner  text-center">
         <div class="container">
-            <h1 class="py-4 mb-0 text-uppercase">{{ title }}</h1>
+            <h1 class=" mb-0 text-uppercase">{{ title }}</h1>
         </div>
     </div>
 

@@ -9,7 +9,7 @@ export default {
         return {
             project: null,
             loading: true,
-            api_base_url: 'http://localhost:8001'
+            api_base_url: 'http://localhost:8000'
         }
     },
     mounted() {

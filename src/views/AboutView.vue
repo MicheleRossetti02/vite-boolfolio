@@ -3,42 +3,55 @@ import AppBanner from '../components/AppBanner.vue';
 import AppNav from '../components/AppNav.vue';
 export default {
     name: 'AboutView',
+
     components: { AppBanner, AppNav }
 }
 </script>
 
 <template>
     <AppNav />
-    <AppBanner title="About Page" />
+    <AppBanner title="About" />
     <div class="container text-white">
-        <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, adipisci optio, tempore maiores sit
-            asperiores
-            sed est nulla esse quos quam laudantium, voluptatibus minus officiis assumenda. Ex vitae eos earum.
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iure, eius quo sint explicabo, ratione non eum
-            cumque tempora laboriosam aliquam saepe quasi recusandae natus officia voluptate? Perspiciatis quasi laborum
-            enim
-            similique obcaecati harum aperiam delectus velit exercitationem! Nobis a natus ullam qui fuga fugit cumque
-            quos
-            amet possimus distinctio, pariatur eaque deleniti voluptate corporis illo tempore aspernatur temporibus
-            nesciunt
-            iure! Fugit numquam corrupti sit aliquam aspernatur laboriosam odit, vero at culpa laborum error impedit
-            adipisci
-            laudantium sint? Voluptatum eaque nostrum sapiente doloribus iste, rerum reiciendis animi, tempora molestias
-            libero at nisi dolores quaerat sit officiis mollitia optio numquam. Suscipit autem expedita nesciunt in,
-            dolorem
-            nisi libero assumenda repellendus minus itaque! Tempore vitae animi commodi veritatis consectetur quas ad,
-            deleniti iure porro quo enim cupiditate quam, laudantium vel illum doloribus, repellendus accusamus aut.
-            Assumenda
-            hic rem quidem qui suscipit dolor maxime ab odio voluptatem consectetur velit ipsa numquam, sunt eaque quae
-            necessitatibus molestias dolores nobis quia maiores corporis repellat molestiae magnam. Vitae sequi ipsa
-            quod
-            similique. Architecto dolores maxime sunt beatae laboriosam. Aliquid ut aut aspernatur minima soluta
-            consectetur
-            ipsa magnam, debitis inventore! Neque, temporibus quia, ipsum eveniet tempora sint dolorem officia
-            recusandae
-            numquam facilis vel ipsam! Similique, assumenda quidem!</p>
+        <h2> Myself:</h2>
+        <p class="mb-3">
+            Sono un ragazzo di 20 anni nato in quest'era digitale che mi ha da subito catturato per la sua capacità
+            incredibile di non avere limiti se non quelli umani dettati dalla fantasia. Da sempre ho avuto la passione
+            per questo mondo che mi ha portato nel mio liceo grazia al mio professore di informatica a gareggiare varie
+            volte nelle olimpiadi di informatica sia a livello regionale che nazionale. La mia passione per questo mondo
+            non si è mai affievolita, tutt'altro da sempre in cerca di nuove tecnologie e nuovi stimoli che mi
+            permettano di aumentare la mia cultura in quest'ambito e che mi portino sempre maggiori conoscenze.</p>
+
+        <h2>Training Academy:</h2>
+        <h4>Master Full Stack Web Developper</h4>
+        <span> BOOLEAN CARRERS | AGOSTO 2022 FEBBRAIO 2023
+        </span>
+        <p>In questo corso intensivo dalla durata di 6 mesi con più di 700 ore di lezioni ho avuto modo di acquisire ed
+            approfondire quel mondo che mi ha affascinato fin da bambino. Mostrandomi l'approccio da avere nelle diverse
+            situazioni e mostrandomi svariati linguaggi attraverso lo sviluppo di svariati progetti ispirati a quelli
+            che sono i grandi business odierni ma anche dando sfogo alla mia fantasia.</p>
+
+        <h4>Università Tor Vergata</h4>
+        <span></span>
+        <p>Alcuni esami sostenuti</p>
+        <ul>
+            <li>
+                Matematica Generale
+
+            </li>
+            <li>
+                Micoreconomia
+            </li>
+            <li>
+                Informatica
+            </li>
+            <li>
+                Inglese
+            </li>
+        </ul>
+        <h4>Istituto Telesi@</h4>
+        <span>Liceo Scientifico opzione Scienze Applicate
+        </span>
+
     </div>
 
 </template>
