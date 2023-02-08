@@ -5,46 +5,80 @@
 export default {
     name: "AppNav",
 
+    methods: {
+        scrollToSectionHome() {
+            const homeSec = document.querySelector('#home')
+            homeSec.scrollIntoView({ behavior: 'smooth' })
+        },
+        scrollToSectionProject() {
+            const projectSec = document.querySelector('#project')
+            projectSec.scrollIntoView({ behavior: 'smooth' })
+        },
+        scrollToSectionAbout() {
+            const aboutSec = document.querySelector('#about')
+            aboutSec.scrollIntoView({ behavior: 'smooth' })
+        },
+        scrollToSectionContact() {
+            const contactSec = document.querySelector('#contact')
+            contactSec.scrollIntoView({ behavior: 'smooth' })
+        },
+    }
+
 }
 </script>
 <template>
-    <!-- //nav template done -->
-    <header>
-        <router-link :to="{ name: 'intro' }">
+    <!-- //nav template  -->
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container">
+
+            <!-- img logo -->
             <img src="../assets/logo.png" width="" alt="">
 
-        </router-link>
+            <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <router-link class="nav-link" activeClass="activeheader " to="#home" onclick="scrollToSectionHome">
+                        HOME
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" activeClass="activeheader " :to="{ name: 'portfolio' }">
 
-        <!-- <h1 class="py-4 mb-0 text-uppercase">{{ title }}</h1> -->
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" activeClass="activeheader " :to="{ name: 'about' }">
 
-        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-            <li class="nav-item">
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" activeClass="activeheader " :to="{ name: 'contacts' }">
 
-                <router-link class="nav-link" activeClass="activeheader " :to="{ name: 'home' }">HOME <span
-                        class="visually-hidden">(current)</span></router-link>
+                    </router-link>
+                </li>
+            </ul>
+        </div>
 
-
-            </li>
-            <!-- <li class="nav-item">
-
-                <router-link class="nav-link" :to="{ name: 'portfolio' }">PROJECTS</router-link>
-            </li> -->
-            <li class="nav-item">
-                <router-link class="nav-link" activeClass="activeheader " :to="{ name: 'about' }">ABOUT</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" activeClass="activeheader "
-                    :to="{ name: 'contacts' }">CONTACTS</router-link>
-            </li>
-
-        </ul>
-
-    </header>
+    </nav>
 
 </template>
 
 <style lang="scss" scoped>
-header {
+nav.navbar {
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: 0.32s ease-in-out;
+
+}
+
+nav.navbar.scrolled {
+    padding: 0px 0;
+    background-color: #121212;
+}
+
+nav {
 
     top: 0;
     // left: 0;
@@ -60,7 +94,7 @@ header {
         top: 30px;
         width: 200px;
         // position: absolute;
-        background-color: #2b1055;
+        // background-color: #2b1055;
         padding: 10px 10px;
         border-radius: 20px;
         box-shadow: 5px 5px #fff;
