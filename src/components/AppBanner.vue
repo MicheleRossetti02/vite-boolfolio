@@ -12,10 +12,19 @@ export default {
         </div>
     </div>
 
+
 </template>
 
 <style lang="scss" scoped>
 .banner {
+
+
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-image: url('../assets/banner-bg.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 
 
