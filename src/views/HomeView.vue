@@ -2,7 +2,7 @@
 import AppBanner from '../components/AppBanner.vue';
 import AppJumbotron from '../components/AppJumbotron.vue';
 import AppNav from '../components/AppNav.vue';
-import PostList from '../components/PostList.vue';
+import PostList from '../components/ProjectList.vue';
 
 
 // import AppMain from '../components/AppMain.vue';

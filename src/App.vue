@@ -1,20 +1,21 @@
 <script>
-// import AppNav from './components/AppNav.vue'
-// import IntroView from './views/IntroView.vue';
-
-// import AppBanner from './components/AppBanner.vue'
-// import AppFooter from './components/AppFooter.vue';
+import AppNav from './components/AppNav.vue'
+import AppBanner from './components/AppBanner.vue'
+import AppFooter from './components/AppFooter.vue';
+import AppAbout from './components/AppAbout.vue';
+import ProjectList from './components/ProjectList.vue';
+import AppContact from './components/AppContact.vue';
 
 
 
 export default {
     components: {
-        // AppNav,
-
-        // AppBanner,
-        // AppFooter
-
-        // IntroViews
+        AppNav,
+        AppBanner,
+        AppFooter,
+        AppAbout,
+        ProjectList,
+        AppContact
     },
 
 }
@@ -25,14 +26,18 @@ export default {
 </script>
 
 <template>
-
-    <!-- <AppNav /> -->
-    <!-- <IntroView /> -->
-    <router-view></router-view>
-
-    <!-- <AppBanner></AppBanner>
-    <AppMain></AppMain> -->
-    <!-- <AppFooter /> -->
+    <!-- NAVBAR -->
+    <AppNav />
+    <!-- BANNER -->
+    <AppBanner />
+    <!-- ABOUT / SKILLS -->
+    <AppAbout />
+    <!-- PROJECTS -->
+    <ProjectList />
+    <!-- CONTACT -->
+    <AppContact />
+    <!-- FOOTER -->
+    <AppFooter />
 
 
 

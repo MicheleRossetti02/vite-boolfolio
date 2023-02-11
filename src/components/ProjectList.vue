@@ -5,7 +5,7 @@ export default {
     data() {
         return {
             projects: null,
-            base_api_url: 'http://127.0.0.1:8000',
+            base_api_url: 'http://127.0.0.1:8001',
             loading: true,
             error: null,
 
@@ -54,8 +54,9 @@ export default {
 
 <template>
 
-    <section class="vue-home pt-5">
+    <section class="vue-home pt-5" id="projects">
         <div class="container">
+            <h2 class="text-center my-4">PROJECT LIST:</h2>
             <template v-if="projects">
                 <div class="row row-cols-1 row-cols-sm-3 g-4">
                     <div class="col text-c" v-for="project in projects.data">

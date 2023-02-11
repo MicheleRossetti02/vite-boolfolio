@@ -1,7 +1,7 @@
 <script>
 import AppBanner from '../components/AppBanner.vue';
 
-import PostList from '../components/PostList.vue';
+import PostList from '../components/ProjectList.vue';
 export default {
     name: 'PortfolioView',
     components: { AppBanner, PostList },
