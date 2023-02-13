@@ -11,11 +11,11 @@ export default {
 <template>
     <div class="container mt-5" id="about-skill">
         <div class="row">
-            <div class="about col-6 d-flex">
+            <div class="about col-sm-12 col-md-6 d-flex">
                 <h2>
                     ABOUT ME:
                 </h2>
-                <p class="my-4 info-text">
+                <p class="my-4 mx-3 info-text ">
                     Sono un ragazzo di 20 anni nato in quest'era digitale che mi ha da subito catturato per la sua
                     capacità
                     incredibile di non avere limiti se non quelli umani dettati dalla fantasia. Da sempre ho avuto la
@@ -29,7 +29,7 @@ export default {
                 </p>
 
             </div>
-            <div class="col-5">
+            <div class="col-sm-12 col-md-5">
                 <AppSkills />
 
             </div>
@@ -39,6 +39,8 @@ export default {
 
 <style lang="scss" scoped>
 .container {
+
+
     .row {
         .about {
             flex-direction: column;

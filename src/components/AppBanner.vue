@@ -30,7 +30,7 @@ export default {
                     </h1>
                     <span class="tagline my-4">Welcome to my Portfolio</span>
 
-                    <a href="#connect"> <span>Let's Connect </span>
+                    <a href="#connect" class="mb-5"> <span>Let's Connect </span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -52,13 +52,14 @@ export default {
 
 <style lang="scss" scoped>
 .banner {
+
     margin-top: 0;
     padding: 260px 0 100px 0;
     background-position: top center;
     background-image: url('../assets/banner-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 

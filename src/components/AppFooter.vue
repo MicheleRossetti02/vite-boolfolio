@@ -14,12 +14,12 @@ export default {
     <footer class="footer">
         <div class="container">
             <div class=" row">
-                <div class="col-6 d-flex align-items-center">
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
                     <a href="#home" class="navbar-brand justify-content-center d-flex ">
                         <img src="../assets/logo.png" width="" alt="Logo">
                     </a>
                 </div>
-                <div class="text-center text-sm-end col-6">
+                <div class="text-center text-sm-end col-sm-12 col-md-6 ">
                     <div class="social-icon mt-3">
                         <a href="https://www.linkedin.com/in/michele-rossetti-298561263/"><img
                                 src="../assets/nav-icon1.svg" alt="" /></a>

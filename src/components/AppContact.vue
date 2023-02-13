@@ -56,11 +56,11 @@ export default {
     <section id="contact" class="contact mt-5">
         <div class="container my-3">
             <div class="row">
-                <div class="col-5 d-flex">
+                <div class="col-sm-12 col-md-5 d-flex">
                     <img src=../assets/contact-img.svg alt="Contact Us" />
 
                 </div>
-                <div class="col-7">
+                <div class="col-sm-12 col-md-7">
                     <h2 class="my-4">CONTACT ME:</h2>
                     <div v-if="success" class="alert alert-success text-start" role="alert">
                         Messaggio inviato con successo
@@ -123,6 +123,7 @@ export default {
 .contact {
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     padding: 60px 0 200px 0;
+
 }
 
 .error {
